@@ -29,6 +29,9 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
 }
 header h1{
     font-size: 4em;
@@ -169,4 +172,73 @@ footer ul{
     display: flex;
     gap: 20px;
     flex-flow: wrap;
+}
+
+/* --------TABLET DIMENSIONS 1019PX */
+@media screen and (max-width: 1019px) {
+    .main-container {
+        width: 90%;
+    }
+    .main-container h1{
+        font-size: 2.5em;
+    }
+    .video-tab{
+        display: block;
+    }
+    .youtube-video{
+        width: 100%;
+    }
+    .fast-info{
+        width: 100%;
+    }
+    .fast-info{
+        height: 280px;
+    }
+    .fast-info ul{
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .responsive-none{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .address{
+        justify-items: center;
+    }
+}
+
+/* --------------- MOBILE DIMENSIONS */
+@media screen and (max-width: 640px) {
+    .responsive-none-mobile{
+        display: none;
+    }
+    .fast-info{
+        height: auto;
+    }
+    .fast-info ul{
+        display: block;
+    }
+    .buttons-socials{
+        width: auto;
+        padding: 10px;
+    }
+    .float-img{
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    footer{
+        height: 150px;
+        padding: 0 70px;
+    }
+    footer ul{
+        margin-top: 10px;
+        justify-content: center;
+    }
 }
