@@ -18,6 +18,7 @@ h6{
     font-size: 1em;
     font-weight: 100;
     color: gray;
+    letter-spacing: 2px;
 }
 
 
@@ -39,7 +40,7 @@ header h1{
     font-weight: 400;
     font-style: normal;
     color: #FF9614;
-    text-shadow: 1px 1px 2px rgb(112, 112, 112);
+    text-shadow: 1px 1px 2px rgb(80 80 80);
     justify-self: center;
 }
 /* ----------MAIN */
@@ -169,7 +170,6 @@ address{
     font-style: normal;
 }
 footer a{
-    text-decoration: none;
     color: white;
 }
 footer ul{
